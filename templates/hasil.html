@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Article</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Generated Article</h1>
+        <div>
+            {{ article|safe }}
+        </div>
+    </div>
+</body>
+</html>

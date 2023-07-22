@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transcribe and Generate Article</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Youtube To Article</h1>
+        <form action="/" method="post">
+            <label for="api_key">Masukkan API Key OpenAI:</label><br>
+            <input type="text" id="api_key" name="api_key" required><br>
+			<label for="url">Masukkan URL YouTube:</label><br>
+            <input type="text" id="url" name="url" required><br>
+            <input type="submit" value="Generate Article">
+        </form>
+    </div>
+</body>
+</html>
